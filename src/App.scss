@@ -1,0 +1,244 @@
+@import "./scss/bootstrap";
+$warning: #FFBF00;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.form-control::placeholder {
+  color: white;
+}
+
+
+footer {
+  background-color: #404040;
+}
+
+.footer_link {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.footer_link:hover {
+  color: $warning;
+}
+
+
+.footer_link::after {
+  content: '';
+  display: block;
+  color: $warning;
+  width: 0;
+  height: 2px;
+  background: $warning;
+  transition: width .3s;
+}
+
+.footer_link:hover::after {
+  width: 100%;
+  //transition: width .3s;
+}
+
+
+.partners {
+  background: url('./assets/images/partner-bg.png') no-repeat center;
+}
+
+// .partners::before {
+//   background: url('./assets/images/partners.png') no-repeat center;
+//   content: '';
+//   position: absolute;
+//   inset: 0;
+//   opacity: 0.6;
+// }
+
+// .partn {
+//   isolation: isolate;
+//   position: relative;
+//   z-index: 1;
+// }
+
+.partner_imgs {
+  img {
+    width: 60%;
+  }
+}
+
+.partner_section {
+  margin-bottom: 150px;
+}
+
+.backImg {
+  width: 50%;
+  position: relative;
+  top: 40px;
+  left: 25px;
+}
+
+.upperImg {
+  width: 60%;
+  position: absolute;
+  top: 10px;
+  left: 24%;
+  animation: rotation 10s infinite linear;
+}
+
+@media only screen and (max-width: 435px) {
+  .upperImg {
+    top: 22.5px;
+    left: 29%;
+  }
+}
+
+@media only screen and (max-width: 275px) {
+  .upperImg {
+    top: 26px;
+    left: 32%;
+  }
+}
+
+
+.hero {
+  min-height: 100vh;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.about {
+  background-image: url('./assets/images/aboutVector.png');
+  background-repeat: no-repeat;
+  background-position-x: start;
+  background-position-y: top;
+  background-size: 30vw 30vw;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.headerLinks {
+  font-size: 0.89rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.headerLinks:hover {
+  color: $warning;
+}
+
+.headerLinks::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: $warning;
+  transition: width .3s;
+}
+
+.headerLinks:hover::after {
+  width: 100%;
+  //transition: width .3s;
+}
+
+// Shop Page
+
+.heroImg {
+  width: 50%;
+  position: relative;
+  top: 40px;
+  left: 25px;
+  animation: rotation 10s infinite linear;
+}
+
+.card_title {
+  text-decoration: none;
+}
+
+.card_title::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: $warning;
+  transition: width .3s;
+}
+
+.card_title:hover::after {
+  width: 100%;
+  //transition: width .3s;
+}
+
+@media only screen and (max-width: 767px) {
+  .algoHide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .navLogo {
+    width: 30%;
+  }
+}
+
+.headDownsSmall {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .headDownsSmall {
+    display: inline;
+  }
+
+  .headDownsLg {
+    display: none;
+  }
+}
+
+
+// FAQ Page
+
+.faqImg {
+  width: 50%;
+  position: relative;
+  top: 40px;
+  left: 25px;
+}
+
+// Footer
+.brand_name{
+  color: white;
+}
+
+.brand_name:hover{
+  text-decoration: underline;
+  text-decoration-color: $warning;
+  color: $warning;
+}
