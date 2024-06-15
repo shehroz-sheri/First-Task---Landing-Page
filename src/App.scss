@@ -28,6 +28,7 @@ main {
 
 footer {
   background-color: #404040;
+  // background-color: #0C0C0C;
 }
 
 .footer_link {
@@ -233,12 +234,52 @@ footer {
 }
 
 // Footer
-.brand_name{
+.brand_name {
   color: white;
 }
 
-.brand_name:hover{
+.brand_name:hover {
   text-decoration: underline;
   text-decoration-color: $warning;
   color: $warning;
+}
+
+.social_icons {
+  color: $warning;
+}
+
+.social_icons:hover {
+  // color: #fefae0;
+  opacity: 0.7;
+}
+
+// Navbar
+.settings_item {
+  cursor: pointer;
+}
+
+.settings_item:hover {
+  background-color: lightgray;
+}
+
+// 
+
+
+@media only screen and (min-width: 747px) {
+  .connect_wallet_img {
+    width: 50%;
+  }
+  .connect_wallet_masks_imgs{
+    width: 50%;
+  }
+}
+
+.notify_img{
+  width: 75%;
+}
+
+@media only screen and (max-width: 600px) {
+  .notify_img{
+    width: 30%;
+  }
 }

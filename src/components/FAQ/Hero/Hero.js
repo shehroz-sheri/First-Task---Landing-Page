@@ -10,7 +10,7 @@ export default function Hero() {
                             <div className="row">
                                 <div className="col-12 col-md-6">
                                     <div className="container mt-5 text-center">
-                                        <h1 className='fw-bolder pt-4'>Frequent Ask Questions</h1>
+                                        <h1 className='fw-bolder pt-4 animate__animated animate__zoomIn'>Frequent Ask Questions</h1>
                                     </div>
                                 </div>
                                 <div className="col-12 col-md-6 text-end">
